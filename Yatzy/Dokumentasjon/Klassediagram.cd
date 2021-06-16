@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Yatzy.Grensesnitt.DomeneModell.KastUgyldigUnntak">
+    <Position X="3" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Programkode\Grensesnitt\DomeneModell\KastUgyldigUnntak.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.Grensesnitt.DomeneModell.TerningUgyldigUnntak">
+    <Position X="3" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Programkode\Grensesnitt\DomeneModell\TerningUgyldigUnntak.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.Grensesnitt.YatzyGrensesnitt">
+    <Position X="5.25" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Programkode\Grensesnitt\YatzyGrensesnitt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Yatzy.InternDomeneModell.Kast">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Programkode\InternDomeneModell\Kast.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.InternDomeneModell.PoengBeregning">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgBgAAEAAwABQAAAACAAADEQAAAAACAAAAACAAA=</HashCode>
+      <FileName>Programkode\InternDomeneModell\PoengBeregning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.InternDomeneModell.Terning">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Programkode\InternDomeneModell\Terning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.Grensesnitt.DomeneModell.PoengOgKategoriMedHøyestPoengSum">
+    <Position X="8" Y="3.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Programkode\Grensesnitt\DomeneModell\PoengOgKategoriMedHøyestPoengSum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Yatzy.Grensesnitt.IYatzyGrensesnitt">
+    <Position X="5.25" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Programkode\Grensesnitt\IYatzyGrensesnitt.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Yatzy.Grensesnitt.DomeneModell.Kategori">
+    <Position X="10.5" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgBgAAEAAgABQAAAAAAAABEQAAAAACAAAAACAAA=</HashCode>
+      <FileName>Programkode\Grensesnitt\DomeneModell\Kategori.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

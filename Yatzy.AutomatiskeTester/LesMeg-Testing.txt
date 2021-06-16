@@ -1,0 +1,14 @@
+﻿Testene bruker 
+- XUnit som testrammeverk: https://xunit.net/docs/getting-started/netcore/visual-studio
+- Fluent Assertions som bistand for gode og tydelige asserts: https://fluentassertions.com/introduction
+
+Testene kan teste interne klasser fra hovedprosjektet for denne er lagt til i .csproj-filen i hovedprosjektet:
+
+  <!-- Internal klasser gjøres synlige for testprosjekt -->
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Yatzy.AutomatiskeTester</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>  
+
+

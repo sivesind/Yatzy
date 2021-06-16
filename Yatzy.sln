@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatzy", "Yatzy\Yatzy.csproj", "{990D3614-C445-4DF9-97F9-3598CA0FDEC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy.AutomatiskeTester", "Yatzy.AutomatiskeTester\Yatzy.AutomatiskeTester.csproj", "{026C3C25-5603-45CC-B952-2DFB9478C96B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990D3614-C445-4DF9-97F9-3598CA0FDEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990D3614-C445-4DF9-97F9-3598CA0FDEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990D3614-C445-4DF9-97F9-3598CA0FDEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990D3614-C445-4DF9-97F9-3598CA0FDEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026C3C25-5603-45CC-B952-2DFB9478C96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026C3C25-5603-45CC-B952-2DFB9478C96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026C3C25-5603-45CC-B952-2DFB9478C96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026C3C25-5603-45CC-B952-2DFB9478C96B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C10F4E68-29EC-4629-A4F2-45F0F8016950}
+	EndGlobalSection
+EndGlobal
