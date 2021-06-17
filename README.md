@@ -1,9 +1,9 @@
 # Yatzy eksempelprosjekt
-Dokumentasjon for biblioteket finnes i 
-[pdf her](https://github.com/sivesind/Yatzy/blob/master/Dokumentasjon%20av%20biblioteket%20Yatzy.pdf) eller [på nett her](https://docs.google.com/document/d/1Euw4zQsA0BtJM91bsH5kxxbgTZkzzQ95QgTk0x3RK1k/edit?usp=sharing)
+Dokumentasjon for biblioteket finnes om ønskelig i 
+[pdf her](https://github.com/sivesind/Yatzy/blob/master/Dokumentasjon%20av%20biblioteket%20Yatzy.pdf).
 
 ## Brukerveiledning for klienter til programbiblioteket 
-Det henvises til kodedokumentasjon på selve kildekoden for utførlig dokumentasjon.
+Det henvises til kodedokumentasjon på selve kildekoden for utførlig og detaljert dokumentasjon.
 ### Målgruppe 
 3. parts-utviklere som skal benytte grensesnittet for poengberegning i sine Yatzy-applikasjoner.
 ### Bruk
@@ -46,38 +46,42 @@ Utviklere som skal vedlikeholde og utvide koden videre.
 ### Eksternt synlige klasser
 ![Eksternt synlige klasser bilde](/images/eksterneklasser.png "Eksterne klasser")
 
-Inngangspunktet i koden er klassen YatzyGrensesnitt, som inneholder to metoder for poengberening. 
-Den implementerer interfacet IYatzyGrensesnitt for tillate 3. parts klienter av 
+Inngangspunktet i koden er klassen `YatzyGrensesnitt`, som inneholder to metoder for poengberening. 
+Den implementerer interfacet `IYatzyGrensesnitt` for tillate 3. parts klienter av 
 programbiblioteket å enkelt kunne mocke ut avhengigheten. 
 
 Det er to unntak (Exceptions) som kan kastes ut av biblioteket, disse kastes ved ugyldige verdier 
-i inputstrenger til metodene i YatzyGrensesnitt. TerningUgyldigUnntak kastes dersom det forsøkes å 
+i inputstrenger til metodene i `YatzyGrensesnitt`:  
+`TerningUgyldigUnntak` kastes dersom det forsøkes å 
 angi en terning i et kast med en ugyldig verdi. Feilmelding i unntaket angir hva som var ugyldig 
-med terningverdien, og på hvilket sted i strengen for terningkast verdien var angitt. KastUgyldigUnntak
- kastes dersom en streng for et kast har ugyldig lengde. 
+med terningverdien, og på hvilket sted i strengen for terningkast verdien var angitt.  
+`KastUgyldigUnntak` kastes dersom en streng for et kast har ugyldig lengde. 
 
-PoengOgKategoriMedHøyestPoengSum benyttes som returverdi for metoden YatzyGrensesnitt.BeregnHøyesteMuligePoengSumForKast, siden denne skal returnere to verdier.
+Klassen `PoengOgKategoriMedHøyestPoengSum` benyttes som returverdi for metoden 
+`YatzyGrensesnitt.BeregnHøyesteMuligePoengSumForKast`, siden denne skal returnere to verdier.
 
-Kategori brukes for å angi hvilken av Yatzys mange kategorier et kast tilhører.
+Klassen `Kategori` brukes for å angi hvilken av Yatzys mange kategorier et kast tilhører.
 
 ### Interne klasser/domenemodell
 ![Interne klasser bilde](/images/interneklasser.png "Interne klasser")
-Yatzy er et ganske enkelt spill, som her er modellert internt med klassene Kast, Terning og Poengberegning. 
+Yatzy er et ganske enkelt spill, som her er modellert internt med klassene `Kast`, `Terning` og `Poengberegning`. 
 
-Kast er et domeneobjekt for å representere et kast i Yatzy. Implementanetasjon består hovedsaklig av å
+`Kast` er et domeneobjekt for å representere et kast i Yatzy. Implementanetasjon består hovedsaklig av å
 validere en streng som skal representere et kast med fem terninger.
 
-Terning representerer en kastet terning i spillet, det er stort sett validering i konstruktør som er 
+`Terning` representerer en kastet terning i spillet, det er stort sett validering i konstruktør som er 
 implementert.
 
-PoengBeregning inneholder mest logikk i koden, der ligger en bereningsmetode per kategori.
+`PoengBeregning` inneholder mest logikk i koden, der ligger en beregningsmetode per kategori.
 
 ### Automatiske tester
 Automatiske tester finnes i testprosjektet Yatzy.AutomatiskeTester og er delt i integrasjonstester og 
 enhetstester. Enhetstester tester kun én klasse, integrasjonstester berører flere. Det er gjort et utvalg
 av tester da det er mange kombinasjoner i Yatzy. En videreutvikling av programkoden må ivareta disse.
+
 #### Dekningsgrad for automatiske tester
-![Dekningsgrad bilde](/images/dekningsgrad.png "Dekningsgrad")
+![Dekningsgrad bilde](/images/dekningsgrad.png "Dekningsgrad")  
+
 Dekningsgrad angir hvor mye av koden som berøres av tester. Den angir ikke alene hvor godt koden er 
 testet, det avhenger også av gode sjekker (asserts) i teskoden. Det er likevel viktig å opprettholde
 dekningsgrad, for å være sikker på at ny kode testes.
