@@ -1,9 +1,9 @@
 # Yatzy eksempelprosjekt
-Dokumentasjon for biblioteket finnes om ønskelig i 
-[pdf her](https://github.com/sivesind/Yatzy/blob/master/Dokumentasjon%20av%20biblioteket%20Yatzy.pdf).
+* **Det henvises til kodedokumentasjon på selve kildekoden for utførlig og detaljert dokumentasjon**
+* Pdf-versjon [finnes her](https://github.com/sivesind/Yatzy/blob/master/Dokumentasjon%20av%20biblioteket%20Yatzy.pdf)
 
 ## Brukerveiledning for klienter til programbiblioteket 
-Det henvises til kodedokumentasjon på selve kildekoden for utførlig og detaljert dokumentasjon.
+
 ### Målgruppe 
 3. parts-utviklere som skal benytte grensesnittet for poengberegning i sine Yatzy-applikasjoner.
 ### Bruk
@@ -52,10 +52,10 @@ programbiblioteket å enkelt kunne mocke ut avhengigheten.
 
 Det er to unntak (Exceptions) som kan kastes ut av biblioteket, disse kastes ved ugyldige verdier 
 i inputstrenger til metodene i `YatzyGrensesnitt`:  
-`TerningUgyldigUnntak` kastes dersom det forsøkes å 
+* `TerningUgyldigUnntak` kastes dersom det forsøkes å 
 angi en terning i et kast med en ugyldig verdi. Feilmelding i unntaket angir hva som var ugyldig 
 med terningverdien, og på hvilket sted i strengen for terningkast verdien var angitt.  
-`KastUgyldigUnntak` kastes dersom en streng for et kast har ugyldig lengde. 
+* `KastUgyldigUnntak` kastes dersom en streng for et kast har ugyldig lengde. 
 
 Klassen `PoengOgKategoriMedHøyestPoengSum` benyttes som returverdi for metoden 
 `YatzyGrensesnitt.BeregnHøyesteMuligePoengSumForKast`, siden denne skal returnere to verdier.
