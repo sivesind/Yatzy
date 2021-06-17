@@ -1,8 +1,9 @@
 # Yatzy eksempelprosjekt
 * **Det henvises til kodedokumentasjon på selve kildekoden for utførlig og detaljert dokumentasjon**
 * Pdf-versjon [finnes her](https://github.com/sivesind/Yatzy/blob/master/Dokumentasjon%20av%20biblioteket%20Yatzy.pdf)
+* Dokumentasjon er todelt, først en veileder for rene brukere av biblioteket, deretter dokumentasjon av intern oppbygning
 
-## Brukerveiledning for klienter til programbiblioteket 
+## Veiledning for brukere av programbiblioteket 
 
 ### Målgruppe 
 3. parts-utviklere som skal benytte grensesnittet for poengberegning i sine Yatzy-applikasjoner.
