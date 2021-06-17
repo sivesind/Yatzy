@@ -5,7 +5,14 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatzy", "Yatzy\Yatzy.csproj", "{990D3614-C445-4DF9-97F9-3598CA0FDEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy.AutomatiskeTester", "Yatzy.AutomatiskeTester\Yatzy.AutomatiskeTester.csproj", "{026C3C25-5603-45CC-B952-2DFB9478C96B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatzy.AutomatiskeTester", "Yatzy.AutomatiskeTester\Yatzy.AutomatiskeTester.csproj", "{026C3C25-5603-45CC-B952-2DFB9478C96B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C02AB221-B721-4277-86D7-6956DB3898C1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{463B314B-A464-43DA-A5AF-AEB9618B0846}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{463B314B-A464-43DA-A5AF-AEB9618B0846} = {C02AB221-B721-4277-86D7-6956DB3898C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C10F4E68-29EC-4629-A4F2-45F0F8016950}
