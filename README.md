@@ -64,6 +64,7 @@ Klassen `Kategori` brukes for å angi hvilken av Yatzys mange kategorier et kast
 
 ### Interne klasser/domenemodell
 ![Interne klasser bilde](/images/interneklasser.png "Interne klasser")
+
 Yatzy er et ganske enkelt spill, som her er modellert internt med klassene `Kast`, `Terning` og `Poengberegning`. 
 
 `Kast` er et domeneobjekt for å representere et kast i Yatzy. Implementanetasjon består hovedsaklig av å
